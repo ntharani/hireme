@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/reset.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <style>
+
+          .container {
+              padding:calc(50% - 35%) calc(50% - 35%);
+              height:100%;
+              display: grid;
+              /* grid-template-columns: 100px auto 100px; */
+              /* grid-template-columns: repeat(3,1fr); */
+              /* grid-template-rows: 50px 50px; */
+              /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+              /* grid-template: auto / repeat(auto-fit, minmax(350px, 1fr)); */
+              grid-template: auto / 3fr 9fr;
+              grid-gap: 3px;
+              /* grid-template-areas: 
+                "h h h h h h h h h h h h"
+                "m c c c c c c c c c c c"
+                "f f f f f f f f f f f f"; */
+          }
+
+          @media only screen 
+            and (min-device-width: 375px) 
+            and (max-device-width: 812px) { 
+            .container { 
+              padding:0;
+            }
+
+          }
+
+          .header, .footer {
+            grid-column: 1 / 3;
+            padding: 1.5em;
+            /* grid-column: 1 / -1; */
+            /* grid-column-start && grid-column-end */
+            /* grid-area: h; */
+          }
+
+          .menu {
+              /* grid-area: m; */
+          }
+
+          .content {
+              /* grid-area: c; */
+          }
+
+          .container > div {
+              display: flex;
+              /* justify-content: center; */
+              align-items: center;
+              font-size: 1.2em;
+          }
+
+          html, body {
+            background-color: #fff;
+          }
+
+          .container > div:nth-child(odd) {
+            background-color: #88d8b0;
+            justify-content: center;
+          }
+
+          .container > div:nth-child(even) {
+            padding: 0.5em;
+            background-color: #ccc222;
+          }
+
+          .container > div:nth-child(1), .container > div:nth-child(2), .container > div:last-child  {
+            /* font-size: 2em; */
+            background-color: #ccc;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          
+            <div class="header">Nagib Tharani - Product Manager</div>
+            <div class="header">A Typical Day...</div>
+            <div>07:30-10:00</div>
+            <div><p> Liaise with overseas teams, UAT as needed, backlog grooming, market+industry research</p></div>
+            <div>10:00-10:30</div>
+            <div>Standup</div>
+            <div>10:30-12:00</div>
+            <div>Meetings / Syncs for clarity on current and future specs</div>
+            <div>12:30-15:30</div>
+            <div>Research / Mockups, Specs, Meetings w/ Sales & Marketing</div>
+            <div>15:30-17:30+</div>
+            <div>Presentation Prep, Backlog Grooming, UAT</div>
+            <div class="footer">
+                <div>
+                <p>There are two paths to being a PM that I've found:</p>
+                
+
+                <ol>
+                  <li>Starting out at a large company and learning a variety of roles in a compressed time frame</li>
+                  <li>Having worked in a variety of roles that combined gives you a deep appreciation and respect of all  
+                      business functions. Although I'm an engineer by training, I've done sales, business development, program management and customer service over the course of my career. I also actively code on the side.</li>
+                </ol>
+                
+                And 3 crazy important traits:
+                
+                1. Humility
+                2. Being an active learner. (I just taught myself CSS Grid to put this site up). That could also be yak-shaving, but I did it on my own time. :)
+                3. Getting your hands dirty. 
+                
+                Stuff I've done over the last year:
+                
+                * Taught myself Figma and deployed it at a company. I love the idea of having a single design system, combining mockups and prototypes and a single source of truth.
+                * Shepherded features from concepts through to release
+                * Queried DB's with SQL. It is beyond important to sourcing data and insights, but my subquery skills aren't yet where I'd like them to be. See #2.
+                * Engaged actively in customer discovery - anyone who tells you avoiding confirmation bias is easy is lying.
+                * Managed agile deliverables and sprint planning.
+                * Created sales and support training decks.
+                * Created business proposals
+                * Created a process framework
+                * Attended conferences to speak directly with customers
+                
+                Can I help you?
+                </div>
+                
+            </div>
+
+          </div>
+    </body>
+</html>
